@@ -1,0 +1,63 @@
+
+/*----- 1. Reset.css -----*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* ナビ */
+
+.nav { /* ナビ外枠 */
+    background: #f0f8ff;
+    padding: 2em;
+}
+
+.nav-ul { /* ul */
+    text-align: right;
+    list-style: none;
+}
+
+.nav_item { /* li */ 
+    display: inline-block;
+    margin-right: 2.0em;
+    text-align: end;
+}
+
+.nav_item > a {  
+   padding-bottom: 3px; 
+   display: block;
+}
+
+.nav_item > a:after { /* li hoverした時に現れる下線(前) */
+    content: '';
+    width: 0;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid #33a0ff; 
+    display: block;
+}
+
+.nav_item > a:hover:after { /* li hoverした時に現れる下線(hover中) */
+    width: 100%; 
+    border-bottom: 2px solid #33a0ff; 
+}
