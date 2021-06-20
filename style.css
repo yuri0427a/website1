@@ -28,9 +28,14 @@ time, mark, audio, video {
 
 /* ナビ */
 
-.nav { /* ナビ外枠 */
+.header { /* ナビ外枠 */
+    display: flex;
     background: #f0f8ff;
     padding: 2em;
+}
+
+.nav{
+        margin-left: auto;
 }
 
 .nav-ul { /* ul */
@@ -49,7 +54,7 @@ time, mark, audio, video {
    display: block;
 }
 
-.nav_item > a:after { /* li hoverした時に現れる下線(前) */
+.nav_item > a:after { /* ナビリスト hoverした時に現れる下線(前) */
     content: '';
     width: 0;
     transition: all 0.3s ease;
@@ -57,7 +62,7 @@ time, mark, audio, video {
     display: block;
 }
 
-.nav_item > a:hover:after { /* li hoverした時に現れる下線(hover中) */
+.nav_item > a:hover:after { /* ナビリスト hoverした時に現れる下線(hover中) */
     width: 100%; 
     border-bottom: 2px solid #33a0ff; 
 }
