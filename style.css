@@ -1,5 +1,5 @@
 
-/*----- 1. Reset.css -----*/
+/* Reset.css */
 
 
 html, body, div, span, applet, object, iframe,
@@ -26,38 +26,91 @@ time, mark, audio, video {
 }
 
 
-/* ナビ */
+/* アイコン(使用箇所:ヘッダー上部Twitter) */
 
-.nav { /* ナビ外枠 */
-    background: #f0f8ff;
-    padding: 2em;
+.icon{ /* アイコン */
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;  
 }
 
-.nav-ul { /* ul */
+
+/* ヘッダー */
+
+#header { /* ヘッダー全体 */
+    padding: 0 4.0em 0 4.0em;
+    background-color: #f0f8ff;
+    /* スクロールするとヘッダーがついてくる */
+    position: sticky; 
+    position: -webkit-sticky; /*Safari用ベンダープレフィックス*/
+    top: 0;
+}
+
+.header_logo{
+    margin: -0.6em 0 0 0; 
+}
+
+.header_inner { /* ヘッダー上部全体 */
+    padding: 1px 0 10px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.header_inner_ul { /* ヘッダー上部 ul */
     text-align: right;
     list-style: none;
 }
 
-.nav_item { /* li */ 
+.header_item { /* ヘッダー上部 li */
     display: inline-block;
-    margin-right: 2.0em;
-    text-align: end;
+    margin-left: 2.0em; 
 }
 
-.nav_item > a {  
-   padding-bottom: 3px; 
-   display: block;
+.header_item > a:hover { /* ヘッダー上部 li hover*/
+    opacity: 0.5;
+    transition: 0.3s;   
 }
 
-.nav_item > a:after { /* li hoverした時に現れる下線(前) */
+.header_main{ /* ヘッダー下部全体 */
+    display: flex;
+    padding: 1.0em 0 1.0em 1.0em;
+}
+
+.nav { /* ナビ全体 */
+    margin-left: auto;
+}
+
+.nav_ul { /* nav ul */
+    text-align: right;
+    list-style: none;
+}
+
+.nav_item { /* nav li */ 
+    display: inline-block;
+    margin-left: 5.0em; 
+}
+
+.nav_item > a {  /* ナビ li a */
+    display: block;
+    padding-bottom: 3px; 
+}
+
+.nav_item > a:after { /* ナビリスト hoverした時に現れる下線(前) */
+    display: block;
     content: '';
     width: 0;
     transition: all 0.3s ease;
     border-bottom: 2px solid #33a0ff; 
-    display: block;
 }
 
-.nav_item > a:hover:after { /* li hoverした時に現れる下線(hover中) */
+.nav_item > a:hover:after { /* ナビリスト hoverした時に現れる下線(hover中) */
     width: 100%; 
     border-bottom: 2px solid #33a0ff; 
+}
+
+
+/* main */
+
+#main{
+    height: 2000px;
 }

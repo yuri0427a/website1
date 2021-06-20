@@ -5,39 +5,76 @@
     <meta charset="utf-8">
     <title>WEBサイト1</title>
     <link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="説明">
     <meta name="keywords" content="キーワード">
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
     <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- FontAwesome5 -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
 </head>
 
 <body>
-    <header class="header">
-        <nav class="nav">
-            <ul class="nav-ul">
-                <li class="nav_item">
+    <!-- header -->
+    <header id="header">
+        <div class="header_inner">
+            <div class="header_inner_ul">
+                <li class="header_item">
                     <a href="#">
-                        HOME
+                        <i class="fas fa-chevron-right"></i>
+                        WEB予約
                     </a>
                 </li>
-                <li class="nav_item">
+                <li class="header_item">
                     <a href="#">
-                        医院案内
+                        <i class="fas fa-chevron-right"></i>
+                        お問い合わせ
                     </a>
                 </li>
-                <li class="nav_item">
+                <li class="header_item">
                     <a href="#">
-                        診療案内
+                        <div class="icon">
+                            <i class="fab fa-twitter-square"></i>
+                        </div>
                     </a>
                 </li>
-                <li class="nav_item">
-                    <a href="#">
-                        ブログ
-                    </a>
-                </li>
-            </ul>
-        </nav><!-- /nav -->
+            </div><!-- /header_inner_ul -->
+        </div><!-- /header_inner -->
+        <div class="header_main">
+            <div class="header_logo">
+                LOGO
+            </div>
+            <nav class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_item">
+                        <a href="#">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">
+                            医院案内
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">
+                            診療案内
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#">
+                            ブログ
+                        </a>
+                    </li>
+                </ul><!-- /nav_ul -->
+            </nav><!-- /nav -->
+        </div><!-- /header_main -->
     </header><!-- /header -->
+
+    <div id="main">
+        aaa
+    </div><!-- /main -->
 </body>
 
 </html>
