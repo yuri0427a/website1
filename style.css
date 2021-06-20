@@ -37,14 +37,22 @@ time, mark, audio, video {
 
 /* ヘッダー */
 
-.header { /* ヘッダー全体 */
+#header { /* ヘッダー全体 */
+    padding: 0 4.0em 0 4.0em;
     background-color: #f0f8ff;
-    padding-right: 4.0em;   
+    /* スクロールするとヘッダーがついてくる */
+    position: sticky; 
+    position: -webkit-sticky; /*Safari用ベンダープレフィックス*/
+    top: 0;
+}
+
+.header_logo{
+    margin: -0.6em 0 0 0; 
 }
 
 .header_inner { /* ヘッダー上部全体 */
-    height: 20px;
     padding: 1px 0 10px;
+    height: 20px;
     font-size: 12px;
 }
 
@@ -68,7 +76,6 @@ time, mark, audio, video {
     padding: 1.0em 0 1.0em 1.0em;
 }
 
-
 .nav { /* ナビ全体 */
     margin-left: auto;
 }
@@ -84,19 +91,26 @@ time, mark, audio, video {
 }
 
 .nav_item > a {  /* ナビ li a */
-    padding-bottom: 3px; 
     display: block;
+    padding-bottom: 3px; 
 }
 
 .nav_item > a:after { /* ナビリスト hoverした時に現れる下線(前) */
+    display: block;
     content: '';
     width: 0;
     transition: all 0.3s ease;
     border-bottom: 2px solid #33a0ff; 
-    display: block;
 }
 
 .nav_item > a:hover:after { /* ナビリスト hoverした時に現れる下線(hover中) */
     width: 100%; 
     border-bottom: 2px solid #33a0ff; 
+}
+
+
+/* main */
+
+#main{
+    height: 2000px;
 }
