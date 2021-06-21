@@ -34,7 +34,6 @@ time, mark, audio, video {
     font-size: 25px;  
 }
 
-
 /* ヘッダー */
 
 #header { /* ヘッダー全体 */
@@ -112,5 +111,12 @@ time, mark, audio, video {
 /* main */
 
 #main{
-    height: 2000px;
+    margin-bottom: 80px;
 }
+
+.main_visual img{
+    width: 100%;
+    max-width: 1820px;
+    height: 600px;
+}
+
