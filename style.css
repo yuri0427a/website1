@@ -1,0 +1,142 @@
+
+/* Reset.css */
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    color: #000;
+    text-decoration: none;
+}
+
+
+/* 見出しレイアウト */
+
+.headline{ /* 見出しレイアウト全体→見出しクラスににheadlineを足すと背景反映 */
+    padding: 15px 0 15px 15%;
+    background-color: #4169e1;
+    color: #fff;
+    font-weight: bold;
+}
+
+.headline_title{ /* 見出し h2 */
+    font-size: 40px;
+    color: inherit;
+}
+
+.headline_hurigana{ /* 見出し p */
+    color: inherit;
+}
+
+
+/* アイコン(使用箇所:ヘッダー上部Twitter) */
+
+.icon{ /* アイコン */
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 25px;  
+}
+
+
+/* ヘッダー */
+
+#header { /* ヘッダー全体 */
+    padding: 0 4.0em 0 4.0em;
+    background-color: #f0f8ff;
+    /* スクロールするとヘッダーがついてくる */
+    position: sticky; 
+    position: -webkit-sticky; /*Safari用ベンダープレフィックス*/
+    top: 0;
+}
+
+.header_logo{
+    margin: -0.6em 0 0 0; 
+}
+
+.header_inner { /* ヘッダー上部全体 */
+    padding: 1px 0 10px;
+    height: 20px;
+    font-size: 12px;
+}
+
+.header_inner_ul { /* ヘッダー上部 ul */
+    text-align: right;
+    list-style: none;
+}
+
+.header_item { /* ヘッダー上部 li */
+    display: inline-block;
+    margin-left: 2.0em; 
+}
+
+.header_item > a:hover { /* ヘッダー上部 li hover*/
+    opacity: 0.5;
+    transition: 0.3s;   
+}
+
+.header_main{ /* ヘッダー下部全体 */
+    display: flex;
+    padding: 1.0em 0 1.0em 1.0em;
+}
+
+.nav { /* ナビ全体 */
+    margin-left: auto;
+}
+
+.nav_ul { /* nav ul */
+    text-align: right;
+    list-style: none;
+}
+
+.nav_item { /* nav li */ 
+    display: inline-block;
+    margin-left: 5.0em; 
+}
+
+.nav_item > a {  /* ナビ li a */
+    display: block;
+    padding-bottom: 3px; 
+}
+
+.nav_item > a:after { /* ナビリスト hoverした時に現れる下線(前) */
+    display: block;
+    content: '';
+    width: 0;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid #33a0ff; 
+}
+
+.nav_item > a:hover:after { /* ナビリスト hoverした時に現れる下線(hover中) */
+    width: 100%; 
+    border-bottom: 2px solid #33a0ff; 
+}
+
+
+/* main */
+
+#main{
+    margin-bottom: 80px;
+}
+
+.main_visual img{
+    width: 100%;
+    max-width: 1820px;
+    height: 600px;
+}
+
