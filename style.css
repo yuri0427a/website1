@@ -23,15 +23,15 @@ time, mark, audio, video {
 	vertical-align: baseline;
     color: #000;
     text-decoration: none;
+    list-style: none;
 }
 
 
 /* 見出しレイアウト */
 
 .headline{ /* 見出しレイアウト全体→見出しクラスににheadlineを足すと背景反映 */
-    padding: 15px 0 15px 15%;
-    background-color: #4169e1;
-    color: #fff;
+    padding: 10px 0 15px 15%;
+    margin-bottom: 80px;
     font-weight: bold;
 }
 
@@ -54,11 +54,11 @@ time, mark, audio, video {
 }
 
 
-/* ヘッダー */
+/* ヘッダー(header&nav) */
 
 #header { /* ヘッダー全体 */
-    padding: 0 4.0em 0 4.0em;
-    background-color: #f0f8ff;
+    padding: 0 4.0em 0.7em 4.0em;
+    background-color: #fff;
     /* スクロールするとヘッダーがついてくる */
     position: sticky; 
     position: -webkit-sticky; /*Safari用ベンダープレフィックス*/
@@ -70,7 +70,7 @@ time, mark, audio, video {
 }
 
 .header_inner { /* ヘッダー上部全体 */
-    padding: 1px 0 10px;
+    padding: 1px 0 20px;
     height: 20px;
     font-size: 12px;
 }
@@ -119,19 +119,19 @@ time, mark, audio, video {
     content: '';
     width: 0;
     transition: all 0.3s ease;
-    border-bottom: 2px solid #33a0ff; 
+    border-bottom: 2px solid #ff6347; 
 }
 
 .nav_item > a:hover:after { /* ナビリスト hoverした時に現れる下線(hover中) */
     width: 100%; 
-    border-bottom: 2px solid #33a0ff; 
+    border-bottom: 2px solid #ff6347; 
 }
 
 
-/* main */
+/* メインビジュアル(main) */
 
 #main{
-    margin-bottom: 80px;
+    margin: 0 60px 60px 60px;
 }
 
 .main_visual img{
@@ -140,3 +140,25 @@ time, mark, audio, video {
     height: 600px;
 }
 
+
+/* ニュース */
+
+.news_item{
+    float: left;
+}
+
+.news_img{ /* ニュース画像　共通 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 190px;
+}
+
+.news_item:nth-child(odd) > .news_img { /* ニュース画像　奇数番目:背景オレンジ */
+    background-image: url('img/news1.png');
+    
+}
+
+.news_item:nth-child(even) > .news_img { /* ニュース画像　偶数番目:背景ピンク */
+    background-image: url('img/news2.png');
+}
