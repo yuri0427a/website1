@@ -26,6 +26,25 @@ time, mark, audio, video {
 }
 
 
+/* 見出しレイアウト */
+
+.headline{ /* 見出しレイアウト全体→見出しクラスににheadlineを足すと背景反映 */
+    padding: 15px 0 15px 15%;
+    background-color: #4169e1;
+    color: #fff;
+    font-weight: bold;
+}
+
+.headline_title{ /* 見出し h2 */
+    font-size: 40px;
+    color: inherit;
+}
+
+.headline_hurigana{ /* 見出し p */
+    color: inherit;
+}
+
+
 /* アイコン(使用箇所:ヘッダー上部Twitter) */
 
 .icon{ /* アイコン */
@@ -33,6 +52,7 @@ time, mark, audio, video {
     vertical-align: middle;
     font-size: 25px;  
 }
+
 
 /* ヘッダー */
 
