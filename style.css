@@ -30,9 +30,10 @@ time, mark, audio, video {
 /* 見出しレイアウト */
 
 .headline{ /* 見出しレイアウト全体→見出しクラスににheadlineを足すと背景反映 */
-    padding: 10px 0 15px 15%;
-    margin-bottom: 80px;
+    padding: 10px 0 15px 1%;
+    margin-bottom: 20px;
     font-weight: bold;
+    color: #800000;
 }
 
 .headline_title{ /* 見出し h2 */
@@ -131,7 +132,7 @@ time, mark, audio, video {
 /* メインビジュアル(main) */
 
 #main{
-    margin: 0 60px 60px 60px;
+    margin: 0 60px 30px 60px;
 }
 
 .main_visual img{
@@ -143,22 +144,51 @@ time, mark, audio, video {
 
 /* ニュース */
 
-.news_item{
-    float: left;
-}
-
-.news_img{ /* ニュース画像　共通 */
-    background-size: contain;
-    background-repeat: no-repeat;
-    width:100%;
-    height: 190px;
-}
-
-.news_item:nth-child(odd) > .news_img { /* ニュース画像　奇数番目:背景オレンジ */
-    background-image: url('img/news1.png');
+#news{  /* ニュース全体 */
+    margin:0 0 100px 190px;
     
 }
 
-.news_item:nth-child(even) > .news_img { /* ニュース画像　偶数番目:背景ピンク */
-    background-image: url('img/news2.png');
+.news_item{ /* ニュース li */
+    float: left;
+    padding: 10px 0 10px;
+    margin: 0 110px 20px 0;
+    width: 20%;
+}
+
+.news_img{ /* ニュース 画像外枠 */
+    width: 250px;
+    height: 180px;
+    text-align: center;
+    overflow: hidden; 
+    border-radius: 5%;  
+}
+
+.img{ /* ニュース画像　共通 */
+    transition: 1s all;         
+}
+
+.img:hover{
+    transform: scale(1.2,1.2);
+    transition: 0.3s all;
+}
+
+.news_gaiyo{ /* ニュース　タイトル + 説明 + 日程　*/
+    margin-top: 15px;
+}
+
+.news_title{  /* ニュース　タイトル */
+    font-weight: bold;
+    font-size: 20px;
+    color: #800000;
+}
+
+.news_discription{  /* ニュース 文章 */
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.news_date{ /* ニュース 登校日 */
+    color: #808080;
+    margin-top: 15px;
 }
