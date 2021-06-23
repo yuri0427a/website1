@@ -145,8 +145,7 @@ time, mark, audio, video {
 /* ニュース */
 
 #news{  /* ニュース全体 */
-    margin:0 0 100px 190px;
-    
+    margin: 0 0 100px 190px;
 }
 
 .news_item{ /* ニュース li */
@@ -188,7 +187,7 @@ time, mark, audio, video {
     margin-top: 5px;
 }
 
-.news_date{ /* ニュース 登校日 */
+.news_date{ /* ニュース 投稿日 */
     color: #808080;
     margin-top: 15px;
 }
