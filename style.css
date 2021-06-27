@@ -45,6 +45,53 @@ time, mark, audio, video {
     color: inherit;
 }
 
+/* button */
+
+a{
+  display: block;
+  text-decoration: none;
+}
+
+.btn{
+  position: relative;
+  margin-left: 355px;
+  width: 240px;
+  height: 48px;
+  line-height: 48px;
+  display: flex;
+  text-align: center;
+  background: #800000;
+  font-size: 20px;
+}
+
+.btn-Text{
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  z-index: 10;
+}
+
+.btn-Text:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #ff6347;
+  border: none;
+  z-index: -1;
+  transition: .2s;
+}
+
+.btn-Text:hover{
+  color: #fff;
+}
+
+.btn-Text:hover:before{
+  width: 100%;
+}
+
 
 /* アイコン(使用箇所:ヘッダー上部Twitter) */
 
@@ -144,8 +191,9 @@ time, mark, audio, video {
 
 /* ニュース */
 
+
 #news{  /* ニュース全体 */
-    margin: 0 0 100px 190px;
+    margin: 0 0 100px 250px;
 }
 
 .news_item{ /* ニュース li */
@@ -191,3 +239,12 @@ time, mark, audio, video {
     color: #808080;
     margin-top: 15px;
 }
+
+.news_ul:after{ /* floatによる潜りこみの解消 */
+    content: "";
+    clear: both;
+    display: block;
+}
+
+
+
