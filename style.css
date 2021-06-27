@@ -52,7 +52,7 @@ a{
   text-decoration: none;
 }
 
-.btn{
+.btn{ /* ボタン外枠 */
   position: relative;
   margin-left: 355px;
   width: 240px;
@@ -64,14 +64,14 @@ a{
   font-size: 20px;
 }
 
-.btn-Text{
+.btn-Text{ /* ボタン文字 */
   width: 100%;
   height: 100%;
   color: #fff;
   z-index: 10;
 }
 
-.btn-Text:before{
+.btn-Text:before{ /* ホバーしたときスライドする */
   content: "";
   position: absolute;
   top: 0;
@@ -178,12 +178,14 @@ a{
 
 /* メインビジュアル(main) */
 
-#main{
-    margin: 0 60px 30px 60px;
+.main_visual{
+    width: 1100px;
+    margin: 0 auto;
 }
 
 .main_visual img{
     width: 100%;
+    margin: 0 auto;
     max-width: 1820px;
     height: 600px;
 }
@@ -191,16 +193,20 @@ a{
 
 /* ニュース */
 
+#news{
+    width: 1000px;
+    margin: 50px auto;
+}
 
-#news{  /* ニュース全体 */
-    margin: 0 0 100px 250px;
+.news_ul{
+    margin-left:50px;
 }
 
 .news_item{ /* ニュース li */
     float: left;
     padding: 10px 0 10px;
-    margin: 0 110px 20px 0;
-    width: 20%;
+    margin: 0 0px 20px 0;
+    width: 33%;
 }
 
 .news_img{ /* ニュース 画像外枠 */
@@ -218,6 +224,7 @@ a{
 .img:hover{
     transform: scale(1.2,1.2);
     transition: 0.3s all;
+
 }
 
 .news_gaiyo{ /* ニュース　タイトル + 説明 + 日程　*/
@@ -246,5 +253,35 @@ a{
     display: block;
 }
 
+/* コンセプトエリア */
 
+.concept_item{
+    display: flex;
+    margin-top: 120px;
+}
 
+.concept_ul > .concept_item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.media_body{
+     margin-top: 70px;
+}
+
+.media_body:nth-child(even){   
+    margin-left: 10%;
+}
+
+.media_discription{
+    width: 300px;
+    font-size: 1.1em;
+}
+
+.media_title{
+    font-weight: bold;
+    font-size: 2.0em;
+}
+
+.concept_button{
+    font-display: block;
+}
