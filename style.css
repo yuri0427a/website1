@@ -285,3 +285,11 @@ a{
 .concept_button{
     font-display: block;
 }
+
+
+/* フッター */
+
+#footer{
+    height: 200px;
+    background-color: #800000;
+}
