@@ -24,7 +24,11 @@ time, mark, audio, video {
     color: #000;
     text-decoration: none;
     list-style: none;
+    font-family: "Sawarabi Gothic";
 }
+
+
+
 
 
 /* 見出しレイアウト */
@@ -54,7 +58,6 @@ a{
 
 .btn{ /* ボタン外枠 */
   position: relative;
-  margin-left: 355px;
   width: 240px;
   height: 48px;
   line-height: 48px;
@@ -190,12 +193,28 @@ a{
     height: 600px;
 }
 
+.parallax_content{
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img_bg_01{
+  background-image: url('img/tomato.jpg');
+}
+
 
 /* ニュース */
 
 #news{
     width: 1000px;
-    margin: 50px auto;
+    margin: 50px auto 150px;
+
 }
 
 .news_ul{
@@ -253,6 +272,11 @@ a{
     display: block;
 }
 
+.news_button{
+    margin: 0 auto;
+    width: 100%;
+}
+
 /* コンセプトエリア */
 
 .concept{
@@ -272,14 +296,10 @@ a{
     flex-direction: row-reverse;
 }
 
-.media_body{
+.concept_item:nth-child(odd) > .media_body {
      margin-top: 170px;
+     margin-left: 250px;
 }
-
-.media_body:nth-child(even){   
-    margin-left: 10%;
-}
-
 
 .media_discription{
     width: 300px;
@@ -297,6 +317,9 @@ a{
     float: left;
 }
 
+.concept_button{
+    margin-top: 50px;
+}
 
 /* フッター */
 
